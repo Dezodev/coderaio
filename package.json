@@ -16,6 +16,8 @@
     "build": "nuxt build && electron-builder"
   },
   "dependencies": {
+    "@nuxtjs/vuetify": "^0.4.3",
+    "element-ui": "^2.4.8",
     "nuxt": "^1.4.0"
   },
   "devDependencies": {

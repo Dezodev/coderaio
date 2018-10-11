@@ -1,13 +1,13 @@
 <template>
 	<section>
-		<h1>coderAIO</h1>
+		<h1>CoderAIO</h1>
 	</section>
 </template>
 
 <script>
 export default {
-	data () {
-
+	data() {
+		return {};
 	}
 }
 </script>
