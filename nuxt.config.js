@@ -3,20 +3,8 @@ module.exports = {
 
 	// Headers of the page
 	head: {
-		title: 'coderAIO',
-		link: [
-		],
+		title: 'coderAIO'
 	},
-	css: [],
-
-	modules: [
-		'@nuxtjs/vuetify'
-	],
-	vuetify: {
-	},
-
-	plugins: [
-	],
 
 	// Disable default loading bar
 	loading: false,
@@ -34,9 +22,12 @@ module.exports = {
 			}
 			// Extend only webpack config for client-bundle
 			if (isClient) { config.target = 'electron-renderer' }
-		},
-		vendor: [],
+		}
 	},
 
 	dev: process.env.NODE_ENV === 'DEV',
+
+	css: [
+		'@/assets/css/global.css'
+	]
 }
