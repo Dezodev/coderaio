@@ -6,9 +6,13 @@
  * License: GNU GPLv3
 **/
 
+/* Spectre.css
+** ========================================== */
+@import "node_modules/spectre.css/src/spectre";
+
 /* General
 ** ========================================== */
 
 body {
-    font-size: 16px; background-color: #2D3033; color: #fff;
+    font-size: 16px; background-color: $dark-color; color: $light-color;
 }

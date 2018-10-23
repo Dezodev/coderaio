@@ -16,7 +16,8 @@
     "build": "nuxt build && electron-builder"
   },
   "dependencies": {
-    "nuxt": "^1.4.0"
+    "nuxt": "^1.4.0",
+    "spectre.css": "^0.5.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
