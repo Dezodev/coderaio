@@ -1,6 +1,6 @@
 {
   "name": "coderaio",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "All in one tools for developer",
   "author": "Dezodev <dezodev@gmail.com>",
   "private": true,
@@ -27,6 +27,8 @@
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0"
   }
 }

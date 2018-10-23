@@ -1,13 +1,12 @@
 module.exports = {
 	mode: 'spa',
+	loading: false,		// Disable default loading bar
+	dev: process.env.NODE_ENV === 'DEV',
 
 	// Headers of the page
 	head: {
 		title: 'coderAIO'
 	},
-
-	// Disable default loading bar
-	loading: false,
 
 	build: {
 		extend (config, { isDev, isClient }) {
@@ -25,9 +24,7 @@ module.exports = {
 		}
 	},
 
-	dev: process.env.NODE_ENV === 'DEV',
-
 	css: [
-		'@/assets/css/global.css'
-	]
+		{ src: '~/assets/scss/main.scss', lang: 'scss' }
+	],
 }
