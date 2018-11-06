@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<h1>coderAIO</h1>
+		<h2>Liste applications</h2>
 	</section>
 </template>
 

@@ -6,6 +6,10 @@
  * License: GNU GPLv3
 **/
 
+/* Variables
+** ========================================== */
+$background-color: #f7f8f9;
+
 /* Spectre.css
 ** ========================================== */
 @import "node_modules/spectre.css/src/spectre";
@@ -14,5 +18,55 @@
 ** ========================================== */
 
 body {
-    font-size: 16px; background-color: $dark-color; color: $light-color;
+    font-size: 16px;
+    background-color: $background-color;
+    color: $dark-color;
+}
+
+/* Structure
+** ========================================== */
+
+.app-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.app-sidebar {
+    padding: 25px 15px 0;
+    width: 12rem;
+
+}
+.app-main-content {
+    padding: 25px 30px 15px;
+    flex: 1 1 auto;
+}
+
+/* Sidebar
+** ========================================== */
+
+.app-sidebar {
+    background: $dark-color;
+    color: $light-color;
+
+    .app-title { font-size: 1.3rem; }
+    .app-sidebar-nav {
+        .nav-item {
+            a {
+                color: $gray-color-light;
+                &.nuxt-link-active {
+                    color: $light-color;
+                    font-weight: 700;
+                }
+            }
+        }
+        .nav {
+            font-size: 0.9em;
+        }
+        .divider {
+            border-top-color: rgba($gray-color-light, .5);
+        }
+    }
 }
