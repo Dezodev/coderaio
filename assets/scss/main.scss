@@ -8,7 +8,7 @@
 
 /* Variables
 ** ========================================== */
-$background-color: #f7f8f9;
+@import "./variables";
 
 /* Spectre.css
 ** ========================================== */
@@ -19,8 +19,8 @@ $background-color: #f7f8f9;
 
 body {
     font-size: 16px;
-    background-color: $background-color;
-    color: $dark-color;
+    background: $gray-color;
+    color: $light-color;
 }
 
 /* Structure
@@ -37,7 +37,7 @@ body {
 .app-sidebar {
     padding: 25px 15px 0;
     width: 12rem;
-
+    color: $light-color;
 }
 .app-main-content {
     padding: 25px 30px 15px;
@@ -55,10 +55,9 @@ body {
     .app-sidebar-nav {
         .nav-item {
             a {
-                color: $gray-color-light;
+                color: $light-color;
                 &.nuxt-link-active {
-                    color: $light-color;
-                    font-weight: 700;
+                    color: $primary-color;
                 }
             }
         }
@@ -66,7 +65,46 @@ body {
             font-size: 0.9em;
         }
         .divider {
-            border-top-color: rgba($gray-color-light, .5);
+            border-top-color: rgba($light-color, .5);
+        }
+    }
+}
+
+
+.color-pallete {
+    .column {
+        .color-bg {
+            height: 30px;
+            text-align: center;
+            color: $light-color;
+            border: 2px solid #000; margin-bottom: 5px;
+        }
+        .color-bg-primary {
+            background: $primary-color;
+            color: $dark-color;
+        }
+        .color-bg-secondary {
+            background: $secondary-color;
+            color: $dark-color;
+        }
+        .color-bg-dark {
+            background: $dark-color;
+        }
+        .color-bg-light {
+            background: $light-color;
+            color: $dark-color;
+        }
+        .color-bg-gray {
+            background: $gray-color;
+        }
+        .color-bg-success {
+            background: $success-color;
+        }
+        .color-bg-warning {
+            background: $warning-color;
+        }
+        .color-bg-error {
+            background: $error-color;
         }
     }
 }
