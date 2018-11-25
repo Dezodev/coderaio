@@ -57,7 +57,10 @@ body {
             a {
                 color: $light-color;
                 &.nuxt-link-active {
-                    color: $primary-color;
+                    &, &:hover { color: $primary-color; }
+                }
+                &:hover, &:focus {
+                    color: $secondary-color;
                 }
             }
         }

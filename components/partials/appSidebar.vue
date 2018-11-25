@@ -7,7 +7,7 @@
                 <nuxt-link to="/">Liste applications</nuxt-link>
             </li>
             <li class="nav-item">
-                <nuxt-link to="/format">Formatting</nuxt-link>
+                <nuxt-link to="/format">Mise en forme</nuxt-link>
                 <ul class="nav">
                     <li class="nav-item">
                         <nuxt-link to="/format/json">JSON</nuxt-link>
