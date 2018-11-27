@@ -16,6 +16,7 @@
     "build": "nuxt build && electron-builder"
   },
   "dependencies": {
+    "@rprabhashvara/nuxtjs-font-awesome-5": "^1.0.1",
     "node-sass": "^4.10.0",
     "nuxt": "^1.4.0",
     "spectre.css": "^0.5.3"

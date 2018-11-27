@@ -2,30 +2,23 @@
 	<section>
 		<h2>Liste applications</h2>
 
-		<div class="color-pallete columns">
-			<div class="column col-2">
-				<div class="color-bg color-bg-primary">primary</div>
-			</div>
-			<div class="column col-2">
-				<div class="color-bg color-bg-secondary">secondary</div>
-			</div>
-			<div class="column col-2">
-				<div class="color-bg color-bg-dark">dark</div>
-			</div>
-			<div class="column col-2">
-				<div class="color-bg color-bg-light">light</div>
-			</div>
-			<div class="column col-2">
-				<div class="color-bg color-bg-gray">gray</div>
-			</div>
-			<div class="column col-2">
-				<div class="color-bg color-bg-success">success</div>
-			</div>
-			<div class="column col-2">
-				<div class="color-bg color-bg-warning">warning</div>
-			</div>
-			<div class="column col-2">
-				<div class="color-bg color-bg-error">error</div>
+		<div class="columns">
+			<div class="column col-4">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title h5">Mise en forme</div>
+					</div>
+					<div class="card-body">
+						<ul class="list-unstyled">
+							<li>
+								<nuxt-link to="/format/json">JSON</nuxt-link>
+							</li>
+							<li>
+								<nuxt-link to="/format/html">HTML</nuxt-link>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

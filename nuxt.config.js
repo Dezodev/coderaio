@@ -5,8 +5,16 @@ module.exports = {
 
 	// Headers of the page
 	head: {
-		title: 'coderAIO'
+		title: 'coderAIO',
 	},
+
+	css: [
+		{ src: '~/assets/scss/main.scss', lang: 'scss' }
+	],
+
+	modules: [
+		'@rprabhashvara/nuxtjs-font-awesome-5',
+	],
 
 	build: {
 		extend (config, { isDev, isClient }) {
@@ -24,7 +32,4 @@ module.exports = {
 		}
 	},
 
-	css: [
-		{ src: '~/assets/scss/main.scss', lang: 'scss' }
-	],
 }
