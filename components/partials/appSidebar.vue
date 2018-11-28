@@ -14,6 +14,9 @@
                 </nuxt-link>
                 <ul class="nav">
                     <li class="nav-item">
+                        <nuxt-link to="/format/text">Texte</nuxt-link>
+                    </li>
+                    <li class="nav-item">
                         <nuxt-link to="/format/json">JSON</nuxt-link>
                     </li>
                     <li class="nav-item">

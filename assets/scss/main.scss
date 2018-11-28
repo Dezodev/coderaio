@@ -1,9 +1,9 @@
 /*
- * coderAIO
- *
- * Version: 0.0.1
- * Author: Dezodev
- * License: GNU GPLv3
+* coderAIO
+*
+* Version: 0.0.1
+* Author: Dezodev
+* License: GNU GPLv3
 **/
 
 /* Variables
@@ -13,19 +13,19 @@
 /* Fonts
 ** ========================================== */
 @font-face {
-    src: url("~/assets/fonts/Oxygen-Light.ttf");
-    font-family: Oxygen;
-    font-weight: 300;
+	src: url("~/assets/fonts/Oxygen-Light.ttf");
+	font-family: Oxygen;
+	font-weight: 300;
 }
 @font-face {
-    src: url("~/assets/fonts/Oxygen-Regular.ttf");
-    font-family: Oxygen;
-    font-weight: 400;
+	src: url("~/assets/fonts/Oxygen-Regular.ttf");
+	font-family: Oxygen;
+	font-weight: 400;
 }
 @font-face {
-    src: url("~/assets/fonts/Oxygen-Bold.ttf");
-    font-family: Oxygen;
-    font-weight: 700;
+	src: url("~/assets/fonts/Oxygen-Bold.ttf");
+	font-family: Oxygen;
+	font-weight: 700;
 }
 $body-font-family: Oxygen, Helvetica, sans-serif;
 
@@ -37,9 +37,9 @@ $body-font-family: Oxygen, Helvetica, sans-serif;
 ** ========================================== */
 
 body {
-    font-size: 16px;
-    background: $gray-color;
-    color: $light-color;
+	font-size: 16px;
+	background: $gray-color;
+	color: $light-color;
 }
 
 /* Font */
@@ -48,104 +48,99 @@ h1, h2, h3, h4, h5,
 
 /* List */
 ul, ol {
-    margin: 0 0 .5rem .5rem;
-    li { margin-top: 0; }
+	margin: 0 0 .5rem .5rem;
+	li { margin-top: 0; }
 
-    &.list-unstyled {
-        list-style: none;
-    }
+	&.list-unstyled {
+		list-style: none;
+	}
 }
 
 /* Card */
 .card {
-    color: $dark-color;
+	color: $dark-color;
 }
 
 /* Structure
 ** ========================================== */
 
 .app-container {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
 }
 
 .app-sidebar {
-    padding: 25px 15px 0;
-    width: 12rem;
-    color: $light-color;
+	padding: 25px 15px 0;
+	width: 12rem;
+	color: $light-color;
 }
 .app-main-content {
-    padding: 25px 30px 15px;
-    flex: 1 1 auto;
+	padding: 25px 30px 15px;
+	flex: 1 1 auto;
 }
 
 /* Sidebar
 ** ========================================== */
 
 .app-sidebar {
-    background: $dark-color;
-    color: $light-color;
+	background: $dark-color;
+	color: $light-color;
 
-    .app-title { font-size: 1.3rem; }
-    .app-sidebar-nav {
-        .nav-item {
-            a {
-                color: $light-color;
-                &.nuxt-link-active {
-                    &, &:hover { color: $primary-color; }
-                }
-                &:hover, &:focus {
-                    color: $secondary-color;
-                }
-            }
-        }
-        .nav {
-            font-size: 0.9em;
-        }
-        .divider {
-            border-top-color: rgba($light-color, .5);
-        }
-    }
+	.app-title { font-size: 1.3rem; }
+	.app-sidebar-nav {
+		.nav-item {
+			a {
+				color: $light-color;
+				&.nuxt-link-active {
+					&, &:hover { color: $primary-color; }
+				}
+				&:hover, &:focus {
+					color: $secondary-color;
+				}
+			}
+			.icon-menu {
+				width: 20px;
+				text-align: center;
+				font-weight: $font-weight-b;
+				display: inline-block;
+				margin-right: 5px;
+			}
+			& > .nav {
+				margin-left: 40px;
+			}
+		}
+		.nav {
+			font-size: 0.9em;
+		}
+		.divider {
+			border-top-color: rgba($light-color, .5);
+		}
+	}
 }
 
+/* Form
+** ========================================== */
 
-.color-pallete {
-    .column {
-        .color-bg {
-            height: 30px;
-            text-align: center;
-            color: $light-color;
-            border: 2px solid #000; margin-bottom: 5px;
-        }
-        .color-bg-primary {
-            background: $primary-color;
-            color: $dark-color;
-        }
-        .color-bg-secondary {
-            background: $secondary-color;
-            color: $dark-color;
-        }
-        .color-bg-dark {
-            background: $dark-color;
-        }
-        .color-bg-light {
-            background: $light-color;
-            color: $dark-color;
-        }
-        .color-bg-gray {
-            background: $gray-color;
-        }
-        .color-bg-success {
-            background: $success-color;
-        }
-        .color-bg-warning {
-            background: $warning-color;
-        }
-        .color-bg-error {
-            background: $error-color;
-        }
-    }
+.form-group {
+	.form-label {
+		text-transform: uppercase;
+		font-size: .8em;
+	}
+	.form-input {
+		background: $gray-color-dark;
+		color: $light-color;
+		border-color: $gray-color-light;
+	}
+}
+
+/* Button
+** ========================================== */
+
+.btn {
+	i.fas, i.far, i.fab {
+		margin-right: 5px;
+	}
 }

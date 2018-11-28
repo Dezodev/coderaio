@@ -5,6 +5,8 @@ $primary-color: #4ecca3;
 $secondary-color: lighten($primary-color, 20%);
 $dark-color: #222831;
 $gray-color: #393e46;
+$gray-color-dark: darken($gray-color, 8%);
+$gray-color-light: lighten($gray-color, 15%);
 $light-color: #eeeeee;
 
 $success-color: #8BC34A;

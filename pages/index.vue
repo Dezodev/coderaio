@@ -11,6 +11,9 @@
 					<div class="card-body">
 						<ul class="list-unstyled">
 							<li>
+								<nuxt-link to="/format/text">Texte</nuxt-link>
+							</li>
+							<li>
 								<nuxt-link to="/format/json">JSON</nuxt-link>
 							</li>
 							<li>
@@ -27,6 +30,8 @@
 <script>
 export default {
 	data () {
+		return {
+		};
 	}
 }
 </script>
