@@ -9,12 +9,17 @@ $gray-color-dark: darken($gray-color, 8%);
 $gray-color-light: lighten($gray-color, 15%);
 $light-color: #eeeeee;
 
+
 $success-color: #8BC34A;
 $warning-color: #FF9800;
 $error-color: #f44336;
 
 $link-color: #3498DB;
+$font-color: #fff;
+$font-color-dark: $gray-color;
 
 $font-weight-l: 300;
 $font-weight-r: 400;
 $font-weight-b: 700;
+
+$global-radius: 3px;

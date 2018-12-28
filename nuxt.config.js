@@ -16,6 +16,10 @@ module.exports = {
 		'@rprabhashvara/nuxtjs-font-awesome-5',
 	],
 
+	plugins: [
+		{ src: '~/plugins/vue-atlas.js', ssr: false }
+	],
+
 	build: {
 		extend (config, { isDev, isClient }) {
 			if (isDev && isClient) {
