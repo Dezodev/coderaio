@@ -5,7 +5,7 @@ module.exports = {
 
 	// Headers of the page
 	head: {
-		title: 'coderAIO',
+		title: 'toolsDesk',
 	},
 
 	css: [

@@ -1,6 +1,6 @@
 <template>
     <div class="app-sidebar">
-        <h1 class="app-title">CoderAIO</h1>
+        <h1 class="app-title">ToolsDesk</h1>
 
         <ul class="nav app-sidebar-nav">
             <li class="nav-item">
