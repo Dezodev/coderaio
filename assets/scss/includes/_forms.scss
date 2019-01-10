@@ -9,11 +9,81 @@
 	.form-label {
 		text-transform: uppercase;
 		font-size: .8em;
+		display: block;
+		line-height: $line-height;
+		padding: $control-padding-y + $border-width 0;
+
+		&.label-sm {
+			font-size: $font-size-sm;
+			padding: $control-padding-y-sm + $border-width 0;
+		}
+
+		&.label-lg {
+			font-size: $font-size-lg;
+			padding: $control-padding-y-lg + $border-width 0;
+		}
 	}
 
 	.form-input {
 		background: $gray-color-dark;
+		appearance: none;
+		background-image: none;
+		border: $border-width solid $gray-color-light;
+		border-radius: $border-radius;
 		color: $light-color;
-		border-color: $gray-color-light;
+		display: block;
+		font-size: $font-size;
+		height: $control-size;
+		line-height: $line-height;
+		max-width: 100%;
+		outline: none;
+		padding: $control-padding-y $control-padding-x;
+		position: relative;
+		transition: all .2s;
+		width: 100%;
+		&:focus {
+			border-color: $primary-color;
+		}
+		&::placeholder {
+			color: $light-color;
+		}
+
+		// Input sizes
+		&.input-sm {
+			font-size: $font-size-sm;
+			height: $control-size-sm;
+			padding: $control-padding-y-sm $control-padding-x-sm;
+		}
+
+		&.input-lg {
+			font-size: $font-size-lg;
+			height: $control-size-lg;
+			padding: $control-padding-y-lg $control-padding-x-lg;
+		}
+
+		&.input-inline {
+			display: inline-block;
+			vertical-align: middle;
+			width: auto;
+		}
+
+		// Input types
+		&[type="file"] {
+			height: auto;
+		}
+	}
+
+	textarea.form-input {
+		&,
+		&.input-lg,
+		&.input-sm {
+			height: auto;
+		}
+	}
+
+	.form-input {
+		&[readonly] {
+			background-color: $gray-color-light;
+		}
 	}
 }

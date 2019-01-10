@@ -34,16 +34,16 @@ $body-font-family: Oxygen, Helvetica, sans-serif;
 @import "node_modules/vue-atlas/dist/vue-atlas.css";
 @import "includes/_normalize";
 
-
 /* General
 ** ========================================== */
 html {
-	font-size: 20px;
+	font-size: $html-font-size;
+	line-height: $html-line-height;
 }
 
 body {
-	font-size: .8rem;
-	line-height: 1.6;
+	font-size: $font-size;
+	line-height: $line-height;
 	font-weight: $font-weight-r;
 	font-family: $body-font-family;
 	background: $gray-color;
@@ -233,7 +233,9 @@ hr {
 
 /* Button
 ** ========================================== */
-
+.va-btn {
+	.fas, .far { margin-right: 5px; }
+}
 
 /* Utilities
 ** ========================================== */
