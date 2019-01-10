@@ -7,7 +7,9 @@
 		<formTextareaInput fieldName="text-transform" fieldLabel="Texte transformé" v-model="textTransform" />
 
 		<div class="actions">
-			<button type="button" class="btn" @click="textExchange"><i class="fas fa-exchange-alt"></i> Echanger</button>
+			<va-button @click="textExchange">
+				<i class="fas fa-exchange-alt"></i> Echanger
+			</va-button>
 		</div>
 	</section>
 </template>

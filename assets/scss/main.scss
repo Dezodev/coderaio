@@ -198,7 +198,8 @@ hr {
 		.nav-item {
 			a {
 				color: $light-color;
-				&.nuxt-link-active {
+				&.nuxt-link-active:not(.active-on-exact),
+				&.active-on-exact.nuxt-link-exact-active {
 					&, &:hover { color: $primary-color; }
 				}
 				&:hover, &:focus {
@@ -225,20 +226,10 @@ hr {
 	}
 }
 
-/* Form
+/* Forms
 ** ========================================== */
+@import "includes/_forms";
 
-.form-group {
-	.form-label {
-		text-transform: uppercase;
-		font-size: .8em;
-	}
-	.form-input {
-		background: $gray-color-dark;
-		color: $light-color;
-		border-color: $gray-color-light;
-	}
-}
 
 /* Button
 ** ========================================== */
