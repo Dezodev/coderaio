@@ -9,7 +9,7 @@
 					'input-lg': isFieldLg,
 					'is-invalid': fieldError,
 				}]"
-				:value="value"
+				:value="value" :readonly="isReadonly"
 				v-on:input="$emit('input', $event.target.value)">
 			></textarea>
 			<div :class="['invalid-feedback']" v-if="fieldError">
@@ -33,18 +33,26 @@ export default {
 		},
 		'value': {},
 		'isFieldLg': {
+			type: Boolean,
 			default: false,
 		},
 		'fieldLabel': {
 			type: String,
 		},
 		'isLarge': {
+			type: Boolean,
 			default: false,
 		},
 		'offsetLabel': {
+			type: Boolean,
 			default: false,
 		},
 		'hideLabel': {
+			type: Boolean,
+			default: false,
+		},
+		'isReadonly': {
+			type: Boolean,
 			default: false,
 		},
 	}

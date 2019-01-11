@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<h2>Liste applications</h2>
+		<h2>Liste des applications</h2>
 
 		<va-row :gutter="15">
 			<va-column :xs="12" :sm="6" :md="4">

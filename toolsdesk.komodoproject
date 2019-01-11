@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="84b29f02-a35e-2b41-abd2-6581f3e9ceb6" kpf_version="5" name="toolsdesk.komodoproject">
+<preference-set idref="84b29f02-a35e-2b41-abd2-6581f3e9ceb6" id="project" preftype="project">
+  <long id="codeintel.scanner.max_depth">10</long>
+  <string id="import_exclude_matches">*.*~;*.bak;*.tmp;CVS;.#*;*.pyo;*.pyc;.svn;.git;.hg;.bzr;*%25*;tmp*.html;.DS_Store;*.swp;*.kpf;*.komodoproject;.komodotools;__pycache__; </string>
+  <long id="prefs_version">1</long>
+</preference-set>
+</project>
