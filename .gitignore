@@ -1,4 +1,10 @@
+# dependencies
+node_modules
+
+# Nuxt build
 .nuxt
+
+# Electron build
 dist
 build/*
 !build/icons
