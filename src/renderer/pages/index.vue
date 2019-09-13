@@ -1,6 +1,6 @@
 <template>
 	<div class="e-nuxt-container">
-
+		<h1>Dashboard</h1>
 	</div>
 </template>
 

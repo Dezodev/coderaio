@@ -1,0 +1,33 @@
+/*
+ * CCVE - Admin main style
+ *
+ * Authors : Emendo
+ * Version : 0.0.1
+**/
+
+@import 'libs/_variables';
+
+/* General
+----------------------------------------------------------------------------------- */
+body {
+	color: $color_font; font-family: $font_family;
+}
+
+	// Font
+h1, h2, h3, h4, h5, h6 {
+	color: $color_white_2;
+}
+
+/* Remove outline on focus */
+:focus { outline:0!important; }
+
+/* Layout
+----------------------------------------------------------------------------------- */
+
+.va-page-wrapper {
+	background: $color_background!important;
+
+	.va-page-container {
+		color: $color_font;
+	}
+}

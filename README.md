@@ -20,3 +20,7 @@ npm run build
 * Author: Dezodev
 * Version: 0.0.1 (in development)
 * License: GNU GPLv3
+* Technologies utilisées :
+	* michalzaq12/electron-nuxt : template d'application electron
+	* element-ui : pour les composants
+

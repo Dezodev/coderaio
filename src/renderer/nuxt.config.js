@@ -6,13 +6,27 @@
 
 module.exports = {
 	mode: 'spa', // or 'universal'
-	head: {
-		title: 'toolsdesk',
-	},
 	loading: false,
+
+	// Load plugins
 	plugins: [
 		{ssr: true, src: '@/plugins/icons.js'},
+		{ssr: true, src: '@/plugins/vue-atlas.js'},
 	],
+
+
+	// Load modules
 	modules: [
 	],
+
+	// CSS
+	css: [
+		'vue-atlas/dist/vue-atlas.css',
+		{ src: '~/assets/scss/main.scss', lang: 'scss' },
+	],
+
+	// Seo settings
+	head: {
+		title: 'Toolsdesk 2',
+	},
 };
