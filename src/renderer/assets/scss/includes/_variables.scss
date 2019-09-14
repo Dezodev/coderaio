@@ -1,0 +1,40 @@
+
+/* Colors */
+
+$color_white_1: #f1f1f1;
+$color_white_2: #e4e4e4;
+
+$color_dark_1: #1C2532;
+$color_dark_2: #283242;
+
+$color_grey_1: #757575;
+$color_grey_2: #979797;
+
+	// font
+$color_font: $color_white_1;
+$color_font_dark: $color_dark_2;
+
+$color_link: #4f81c7;
+
+	// background
+$color_background: $color_dark_1;
+
+/* font */
+
+$font_family: sans-serif;
+
+$font_html_size: 20px !default;
+$font_size: .8rem !default;
+$font_size_sm: .7rem !default;
+$font_size_lg: .9rem !default;
+
+$line_height: 1.2rem !default;
+$line_height_html: 1.5 !default;
+
+$font_weight_l: 300;
+$font_weight_r: 400;
+$font_weight_b: 700;
+
+/* Others */
+
+$gl_radius: 2px;

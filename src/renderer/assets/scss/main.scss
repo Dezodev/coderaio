@@ -1,25 +1,107 @@
 /*
- * CCVE - Admin main style
- *
- * Authors : Emendo
- * Version : 0.0.1
+* toolsDesk
+*
+* Version: 0.0.1
+* Author: Dezodev
+* License: GNU GPLv3
 **/
 
-@import 'libs/_variables';
+/* Variables
+** ========================================== */
+@import "includes/_variables";
 
 /* General
------------------------------------------------------------------------------------ */
-body {
-	color: $color_font; font-family: $font_family;
+** ========================================== */
+
+html {
+	font-size: $font_html_size;
+	line-height: $line_height_html;
 }
 
-	// Font
+body {
+	color: $color_font; font-family: $font_family;
+	font-size: $font_size; line-height: $line_height;
+	font-weight: $font_weight_r;
+}
+
+/* link */
+a { color: $color_link;
+	&:hover { color: darken($color_link, 5%); }
+}
+
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
 	color: $color_white_2;
 }
 
+/* List */
+ul, ol {
+	padding-left: 0;
+	margin-top: 0;
+
+	li {
+		margin-bottom: 0;
+	}
+	&.list-unstyled {
+		list-style: none;
+	}
+
+	ul, ol {
+		margin: 0 0 0 3rem;
+		font-size: 90%;
+	}
+	ul {
+		list-style-type: circle;
+	}
+}
+
+ul {
+	list-style: disc inside;
+}
+
+ol {
+	list-style: decimal inside;
+}
+
+/* Cards */
+.va-card {
+	color: $color_font_dark;
+
+	.va-card-body {
+		& > *:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* Code */
+code {
+	padding: .2rem .5rem;
+	margin: 0 .2rem;
+	font-size: 90%;
+	white-space: nowrap;
+	background: $color_grey_2;
+	border: 1px solid $color_grey_2;
+	border-radius: $gl_radius;
+}
+
+pre>code {
+	display: block;
+	padding: 1rem 1.5rem;
+	white-space: pre;
+}
+
 /* Remove outline on focus */
 :focus { outline:0!important; }
+
+
+/* Button */
+.va-btn {
+	.fas, .far { margin-right: 5px; }
+}
+.btn-actions {
+	.va-btn { margin-right: 10px; }
+}
 
 /* Layout
 ----------------------------------------------------------------------------------- */
@@ -31,3 +113,24 @@ h1, h2, h3, h4, h5, h6 {
 		color: $color_font;
 	}
 }
+
+/* Utilities
+** ========================================== */
+.ut-full-width {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.ut-max-full-width {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.ut-pull-right {
+	float: right;
+}
+
+.ut-pull-left {
+	float: left;
+}
+

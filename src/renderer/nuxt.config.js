@@ -27,6 +27,6 @@ module.exports = {
 
 	// Seo settings
 	head: {
-		title: 'Toolsdesk 2',
+		title: 'toolsDesk',
 	},
 };

@@ -22,5 +22,5 @@ npm run build
 * License: GNU GPLv3
 * Technologies utilisées :
 	* michalzaq12/electron-nuxt : template d'application electron
-	* element-ui : pour les composants
+	* nvms/vue-atlas : pour les composants
 
