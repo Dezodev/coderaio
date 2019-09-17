@@ -1,24 +1,16 @@
 <template>
-	<div class="e-nuxt-container">
-		<h1>Liste des applications</h1>
+	<div class="td-page-home">
+		<pageHeader title="Liste des applications"/>
 
+		<div class="line-cat">
+			<h2>Mise en forme</h2>
+		</div>
 		<va-row :gutter="gridGutter">
-			<va-column :xs="12" :sm="6" :md="4">
+			<va-column :xs="12" :sm="6" :md="4" v-for="it in appsList.format" :key="it.text">
 				<va-card :elevation="cardOpt.elv">
-					<div slot="topLeft">
-						<div class="card-title">Mise en forme</div>
-					</div>
-					<ul class="list-unstyled">
-						<li>
-							<nuxt-link to="/format/text">Texte</nuxt-link>
-						</li>
-						<li>
-							<nuxt-link to="/format/json">JSON</nuxt-link>
-						</li>
-						<li>
-							<nuxt-link to="/format/html">HTML</nuxt-link>
-						</li>
-					</ul>
+					<nuxt-link :to="it.link">
+						{{ it.text }}
+					</nuxt-link>
 				</va-card>
 			</va-column>
 		</va-row>
@@ -26,15 +18,34 @@
 </template>
 
 <script>
+import pageHeader from '~/components/pageHeader.vue'
 import { remote } from 'electron'
 
 export default {
-	components: {},
+	components: {
+		pageHeader
+	},
 	data () {
 		return {
 			gridGutter: 15,
 			cardOpt: {
-				elv: 0,
+				elv: 1,
+			},
+			appsList: {
+				format: [
+					{
+						text: 'Texte',
+						link: '/format/text'
+					},
+					{
+						text: 'JSON',
+						link: '/format/json'
+					},
+					{
+						text: 'HTML',
+						link: '/format/html'
+					},
+				]
 			}
 		}
 	},
