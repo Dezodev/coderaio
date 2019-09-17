@@ -1,9 +1,9 @@
 import { Menu, MenuItem, app } from 'electron'
 import { ELECTRON_RELAUNCH_CODE } from '../../../.electron-nuxt/config'
-
+const isDev = process.env.NODE_ENV === 'development'
 
 export default {
-	create (isDev = false) {
+	create () {
 		const isMac = process.platform === 'darwin'
 
 		// Build file submenu
