@@ -1,9 +1,9 @@
 <template lang="html">
 	<section class="td-formBuilder-text">
-		<va-form-item :label="field.title">
+		<va-form-item :label="field.title" class="va-row">
 			<va-textarea
 				:value="value"
-				@input="$emit('input', $event.target.value)"
+				@input="$emit('input', $event)"
 				:resize="true"
 				:disabled="disable"
 				:placeholder="field.title"

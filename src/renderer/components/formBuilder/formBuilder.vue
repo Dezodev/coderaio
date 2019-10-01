@@ -12,7 +12,7 @@
 				ref="formInput"
 				v-model="formData[field.key]"
 				:field="field"
-				:disable="formDisable"
+				:disable="inputDisable(field)"
 				:fieldErrors="formErrors[field.key] || null"
 				v-else-if="field.type == 'text'"
 			/>
@@ -20,7 +20,7 @@
 				ref="formInput"
 				v-model="formData[field.key]"
 				:field="field"
-				:disable="formDisable"
+				:disable="inputDisable(field)"
 				:fieldErrors="formErrors[field.key] || null"
 				v-else-if="field.type == 'textarea'"
 			/>
@@ -28,7 +28,7 @@
 				ref="formInput"
 				v-model="formData[field.key]"
 				:field="field"
-				:disable="formDisable"
+				:disable="inputDisable(field)"
 				:fieldErrors="formErrors[field.key] || null"
 				v-else-if="field.type == 'select'"
 			/>
@@ -36,7 +36,7 @@
 				ref="formInput"
 				v-model="formData[field.key]"
 				:field="field"
-				:disable="formDisable"
+				:disable="inputDisable(field)"
 				:fieldErrors="formErrors[field.key] || null"
 				v-else-if="field.type == 'date'"
 			/>
@@ -87,7 +87,11 @@ export default {
 					one_el.resetForm()
 				}
 			})
+		},
+		inputDisable(field) {
+			let field_disable = (!_.isEmpty(field.args) && _.isBoolean(field.args.disable)) ? field.args.disable : false;
+			return this.formDisable || field_disable;
 		}
-	}
+	},
 }
 </script>

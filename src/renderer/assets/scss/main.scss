@@ -103,6 +103,13 @@ pre>code {
 	.va-btn { margin-right: 10px; }
 }
 
+/* form */
+.va-form-group {
+	&.va-row {
+		margin-left: -15px; margin-right: -15px;
+	}
+}
+
 /* Layout
 ----------------------------------------------------------------------------------- */
 
